@@ -2,19 +2,19 @@ import { BadRequestError } from '../errors/bad-request-error'
 import { StringValueObject } from './value-object/string-value-object'
 
 export class Uuid extends StringValueObject {
-  constructor(value: string) {
+  constructor(override readonly value: string) {
     super(value)
     this.validateUuid(value)
-  }
-
-  static invalidUuidMessage(): string {
-    return 'El UUID ingresado no es válido.'
   }
 
   private validateUuid(value: string) {
     if (!this.validUuidRegExp.test(value)) {
       throw new BadRequestError(Uuid.invalidUuidMessage())
     }
+  }
+
+  private static invalidUuidMessage(): string {
+    return 'El UUID ingresado no es válido.'
   }
 
   private readonly validUuidRegExp =
