@@ -8,7 +8,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test:sections": "vitest tests/app/components/sections",
+    "test:app": "vitest tests/app",
     "test:modules": "vitest tests/modules",
     "test:pages": "playwright test tests/pages"
   },
