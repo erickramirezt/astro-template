@@ -4,16 +4,16 @@ import { ValueObject } from './value-object'
 export class StringValueObject extends ValueObject<string> {
   constructor(override readonly value: string) {
     super(value)
-    this.validateStringValue(value)
-  }
-
-  private validateStringValue(value: string) {
-    if (typeof value !== 'string') {
+    if (StringValueObject.isStringValueValid(value)) {
       throw new BadRequestError(StringValueObject.invalidStringValueMessage())
     }
   }
 
-  private static invalidStringValueMessage() {
+  private static isStringValueValid(value: string): boolean {
+    return typeof value === 'string'
+  }
+
+  static invalidStringValueMessage(): string {
     return 'El valor ingresado no es una cadena de texto.'
   }
 }
