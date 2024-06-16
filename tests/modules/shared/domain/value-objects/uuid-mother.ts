@@ -1,5 +1,5 @@
 import { Uuid } from '@/modules/shared/domain/value-objects/uuid'
-import { StringMother } from './mother-creator/string-mother'
+import { StringMother } from './string-mother'
 
 export const UuidMother = {
   create(value?: string): Uuid {

@@ -1,4 +1,4 @@
-import { MotherCreator } from './mother-creator'
+import { MotherCreator } from "./mother-creator";
 
 export const StringMother = {
   uuid() {

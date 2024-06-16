@@ -1,4 +1,23 @@
 {
-  "recommendations": ["astro-build.astro-vscode"],
+  "recommendations": [
+    "astro-build.astro-vscode",
+    "dbaeumer.vscode-eslint",
+    "wix.vscode-import-cost",
+    "xabikos.javascriptsnippets",
+    "vitest.explorer",
+    "bradlc.vscode-tailwindcss",
+    "pflannery.vscode-versionlens",
+    "humao.rest-client",
+    "wallabyjs.quokka-vscode",
+    "vunguyentuan.vscode-postcss",
+    "ms-playwright.playwright",
+    "christian-kohler.npm-intellisense",
+    "ms-vscode.vscode-typescript-next",
+    "visualstudioexptteam.intellicode-api-usage-examples",
+    "visualstudioexptteam.vscodeintellicode",
+    "wallabyjs.console-ninja",
+    "meganrogge.template-string-converter",
+    "esbenp.prettier-vscode"
+  ],
   "unwantedRecommendations": []
 }

@@ -2,7 +2,7 @@ import { expect, test } from 'vitest'
 import { render } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 
-import { Counter } from '../../../../src/app/index/components/counter'
+import { Counter } from '../../../../src/app/home-page/components/counter'
 
 test('counter', async () => {
   const page = render(<Counter />)
